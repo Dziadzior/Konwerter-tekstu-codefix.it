@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(95, 95, 95);
+}
+
+.blok {
+    width: 450px;
+    padding: 30px 25px 40px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.blok :where(textarea, input, select, button) {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.blok textarea {
+    height: 270px;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    resize: none;
+}
+
+.blok .opcje-pliku {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.blok .zapisz-przycisk {
+    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background: #ff3232;
+    cursor: pointer;
+}
+
+.opcje-pliku .opcje {
+    width: calc(100% / 2 - 8px);
+}
+
+.opcje :where(input, .wybierz-menu) {
+    height: 50px;
+    margin-top: 6px;
+    padding: 0 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.opcje .wybierz-menu select {
+    height: 50px;
+    background: transparent;
+}
+
